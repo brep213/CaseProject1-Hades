@@ -5,70 +5,92 @@
 <head>
     <meta charset="utf-8">
     <title> Hades </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="background-color: darkred;">
+<body>
     <div id="container">
         <!-- header area for the website name or logo -->
-        <header>
-            <h1> Hades </h1>
-        </header>
 
-        <!-- nav area to add the main content specific to each website -->
-        <nav>
-            <p> <a href="index.html">Home</a> &nbsp; &#9475; &nbsp;
-                <a href="biomes.html">Biomes</a> &nbsp; &#9475; &nbsp;
-                <a href="characters.html">Characters</a> &nbsp; &#9475; &nbsp;
-                <a href="weapons.html">Weapons</a> &nbsp; &#9475; &nbsp;
-            </p>
-        </nav>
+            <header>
+                <h1 class="site-title"> Hades </h1>
+                <img src="images/Hades_logo_small.png" alt="hades logo" class="logo">
+            </header>
 
-        <!-- main area to add the main content specific to each webpage -->
-        <main>
-            <h2>Characters</h2>
-            <p> There are many characters in Hades to meet and get to know. Each one gives you different benefits.
-                The ones that help you "directly" during your adventure through Hades are the olympians. They offer
-                boons to that help you travel throgh the underworld. There other characters that offer temporary
-                boons or improves Zagreus in some way.
-            </p>
-            <h2>Olympians</h2>
-            <p> Besides the olmpians there are the Cthonic Gods and othe important charachters from Greek mythology.
-                A way to get items that you can use in every run is by forming a bond with these characters. Each item
-                represents the characters in some way. You get these items by gifting these characters Nectar,but the
-                Olympians also offer temporary boons that can be granted randomly</p>
-            <!-- add list of Characters with images -->
+            <!-- nav area to add the main content specific to each website -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biomes.html">Biomes</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="weapons.html">Weapons</a></li>
+                </ul>
+            </nav>
 
-            <h2>Zeus</h2>
-            <img src="images/Characters/Zeus.png" alt="Zeus">
-            <p>His boons allow attacks to deal damage to multiple enemies.</p>
-            <h2>Aphrodite</h2>
-            <img src="images/Characters/Aphrodite.png" alt="Aphrodite">
-            <p>Her boons let Zagreus give his enemies a speed debuff.</p>
-            <h2>Poseidon</h2>
-            <img src="images/Characters/Poseidon.png" alt="Poseidon">
-            <p>His boons give weapons the ability to knock back enemies.</p>
-            <h2>Ares</h2>
-            <img src="images/Characters/Ares.png" alt="Ares">
-            <p>His boons increase Zagreus’s ability damage as well as deals enemies damage over time</p>
-            <h2>Hermes</h2>
-            <img src="images/Characters/Hermes.png" alt="Hermes">
-            <p>His boons buffs Zagreus’s speed in different ways (i.e., movement and/or attack)</p>
-            <h2>Athena</h2>
-            <img src="images/Characters/Athena.png" alt="Athena">
-            <p>Her boons provide Zagreus with opportunities to deflect an enemy’s attacks.</p>
-            <h2>Dionysus</h2>
-            <img src="images/Characters/Dionysus.png" alt="Dionysus">
-            <p>His boons poisons enemies or increase Zagreus’s health over time.</p>
-            <h2>Artemis</h2>
-            <img src="images/Characters/Artemis.png" alt="Artemis">
-            <p>Her boons boost the chance for Zagreus to land critical damage on his enemies.</p>
-            <p> For more charachter information: <a href="https://hades.fandom.com/wiki/Characters" target="_blank">https://hades.fandom.com/wiki/Characters</p>
-        </main>
+            <!-- main area to add the main content specific to each webpage -->
+            <main>
+                <h2>Characters</h2>
+                <p> There are many characters in Hades to meet and get to know. Each one gives you different benefits.
+                    The ones that help you "directly" during your adventure through Hades are the olympians. They offer
+                    boons to that help you travel throgh the underworld. There other characters that offer temporary
+                    boons or improves Zagreus in some way.
+                </p>
+                <h2>Olympians</h2>
+                <p> Besides the olmpians there are the Cthonic Gods and othe important charachters from Greek mythology.
+                    A way to get items that you can use in every run is by forming a bond with these characters. Each
+                    item
+                    represents the characters in some way. You get these items by gifting these characters Nectar,but
+                    the
+                    Olympians also offer temporary boons that can be granted randomly</p>
+                <!-- add list of Characters with images -->
+                <ol id="char-list">
+                    <li><a href="#zeus">Zeus</a></li>
+                    <li><a href="#poseidon">Poseidon</a></li>
+                    <li><a href="#athena">Athena</a></li>
+                    <li><a href="#ares">Ares</a></li>
+                    <li><a href="#hermes">Hermes</a></li>
+                    <li><a href="#aphrodite">Aphrodite</a></li>
+                    <li><a href="#artemis">Artemis</a></li>
+                    <li><a href="#dionysus">Dionysus</a></li>
+                </ol>
+                <h2 id="zeus">Zeus</h2>
+                <img class= "char-image" src="images/Characters/Zeus.png" alt="Zeus">
+                <p class="move_text">His boons allow attacks to deal damage to multiple enemies.The status ailment his boon causes is "Jolted". The victims next attack causes it to inflict damage on itself and other enemies around it.</p>
+                <h2 id="aphrodite">Aphrodite</h2>
+                <img class= "char-image" src="images/Characters/Aphrodite.png" alt="Aphrodite">
+                <p class="move_text">Her boons let Zagreus give his enemies a speed debuff. The status ailment her boons cause "Weak". The victims attacks do less damage.</p>
+                <h2 id="poseidon">Poseidon</h2>
+                <img class= "char-image" src="images/Characters/Poseidon.png" alt="Poseidon">
+                <p class="move_text">His boons give weapons the ability to knock back enemies. The status ailment his boon causes is "Ruptured". The victim will take rapid damage everytime they move.</p>
+                <h2 id="ares">Ares</h2>
+                <img class= "char-image" src="images/Characters/Ares.png" alt="Ares">
+                <p class="move_text">His boons increase Zagreus’s ability damage as well as deals enemies damage over time. The status ailment his boon causes is "Doom". When affected the victim will eventually take damage.</p>
+                <h2 id="hermes">Hermes</h2>
+                <img class= "char-image" src="images/Characters/Hermes.png" alt="Hermes">
+                <p class="move_text">His boons buffs Zagreus’s speed in different ways (i.e., movement and/or attack). Hermes is the only Olympian that do not curse the enemy. His boons are strictly buffs for Zagreus.</p>
+                <h2 id="athena">Athena</h2>
+                <img class= "char-image" src="images/Characters/Athena.png" alt="Athena">
+                <p class="move_text">Her boons provide Zagreus with opportunities to deflect an enemy’s attacks. The status ailment her boon causes is "Exposed". The victim takes more damge when struck from behind.</p>
+                <h2 id="dionysus">Dionysus</h2>
+                <img class= "char-image" src="images/Characters/Dionysus.png" alt="Dionysus">
+                <p class="move_text">His boons poisons enemies or increase Zagreus’s health over time. The status ailment his boon causes is "Hangover". The victim takes damage everty half second, and this ailment can be stacked up to five times.</p>
+                <h2 id="artemis">Artemis</h2>
+                <img class= "char-image" src="images/Characters/Artemis.png" alt="Artemis">
+                <p class="move_text">Her boons boost the chance for Zagreus to land critical damage on his enemies. The status ailment her boon causes is "Marked". The victim has a higher chance of taking critical damage from one attack.</p>
+                <p> For more charachter information: <a href="https://hades.fandom.com/wiki/Characters"
+                        target="_blank">https://hades.fandom.com/wiki/Characters</a></p>
+            </main>
 
-        <!-- footer area to add content at bottom of page -->
-        <footer>
-            <p>Brezhiona Pierce, &copy; Copyright</p>
-        </footer>
+            <!-- footer area to add content at bottom of page -->
+            <footer>
+                <p>Brezhiona Pierce, &copy; Copyright</p>
+            </footer>
     </div>
 </body>
 

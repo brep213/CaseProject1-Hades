@@ -5,60 +5,78 @@
 <head>
     <meta charset="utf-8">
     <title> Hades </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="background-color: darkred;">
+<body>
     <div id="container">
-    <!-- header area for the website name or logo -->
-    <header>
-        <h1> Hades </h1>
-    </header>
+        <!-- header area for the website name or logo -->
+        <header>
+            <h1 class="site-title"> Hades </h1>
+            <img src="images/Hades_logo_small.png" alt="hades logo" class="logo">
+        </header>
 
-    <!-- nav area to add the main content specific to each website -->
-    <nav>
-        <p> <a href="index.html">Home</a> &nbsp; &#9475; &nbsp;
-            <a href="biomes.html">Biomes</a> &nbsp; &#9475; &nbsp;
-            <a href="characters.html">Characters</a> &nbsp; &#9475; &nbsp;
-            <a href="weapons.html">Weapons</a> &nbsp; &#9475; &nbsp; </p>
-    </nav>
+        <!-- nav area to add the main content specific to each website -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biomes.html">Biomes</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="weapons.html">Weapons</a></li>
+            </ul>
+        </nav>
 
-    <!-- main area to add the main content specific to each webpage -->
-    <main>
-        <div id="biomes">
-        <h2>Biomes</h2>
-        <p> To beat the game you must make it through each biome in hades in on run. Each level has different enviroment
-            that can be used against you and/or the enemies.
-        </p>
-        <!-- add a desciption of each-->
-            <div id="tartarus">
-            <h2>Tartarus</h2>
-            <img src="images/Biomes/Tartarus.jpg" alt="darkgreen-toned city like landscape" height="200" width="350">
-            <p>Tartarus is the first level you enter after leaving the weapon room.</p>
+        <!-- main area to add the main content specific to each webpage -->
+        <main>
+            <div id="biomes">
+                <h2>Biomes</h2>
+                <p> To beat the game you must make it through each biome in hades in on run. Each level has different
+                    enviroment
+                    that can be used against you and/or the enemies.
+                </p>
+                <!-- add a desciption of each-->
+                <div id="tartarus">
+                    <h2>Tartarus</h2>
+                    <img src="images/Biomes/Tartarus.jpg" alt="darkgreen-toned city like landscape" height="200"
+                        width="350">
+                    <p class="move_text">Tartarus is the first level you enter after leaving the weapon room.</p>
+                </div>
+                <div id="asphodel">
+                    <h2>Asphodel</h2>
+                    <img src="images/Biomes/Asphodel.jpg" alt="red-toned volcanic like landscape" height="200"
+                        width="350">
+                    <p class="move_text">This is the second level of Hades. You enter this area after defeating one of the three fates (or
+                        all of them...) in Tartarus.</p>
+                </div>
+                <div id="elysiuim">
+                    <h2>Elysiuim</h2>
+                    <img src="images/Biomes/Elysium.png" alt="brightgreen-toned forest like landscape" height="200"
+                        width="350">
+                    <p class="move_text">This is the third level of Hades. To enter this area you have to defeat the Hydra in Asphodel.
+                    </p>
+                </div>
+                <p >The bosses to defeat for each area: </p>
+                <ol>
+                    <li>The Three Furies (might have to defeat one or three at once)</li>
+                    <li>Hydra (has different forms)</li>
+                    <li>Theseus and Asterius</li>
+                </ol>
+                <p>To learn more about the different areas visit: <a
+                        href="https://guides.gamepressure.com/hades/guide.asp?ID=60340"
+                        target="_blank">https://guides.gamepressure.com/hades/guide.asp?ID=60340</a></p>
             </div>
-            <div id="asphodel">
-            <h2>Asphodel</h2>
-            <img src="images/Biomes/Asphodel.jpg" alt="red-toned volcanic like landscape" height="200" width="350">
-            <p>This is the second level of Hades. You enter this area after defeating one of the three fates (or all of them...) in Tartarus.</p>
-            </div>
-            <div id="elysiuim">
-            <h2>Elysiuim</h2>
-            <img src="images/Biomes/Elysium.png" alt="brightgreen-toned forest like landscape" height="200" width="350">
-            <p>This is the third level of Hades. To enter this area you have to defeat the Hydra in Asphodel.</p>
-            </div>
-            <p>The bosses to defeat for each area: </p>
-            <ol>
-                <li>The Three Fates (might have to defeat one or three at once)</li>
-                <li>Hydra (has different forms)</li>
-                <li>Theseus and Asterius</li>
-            </ol>
-            <p>To learn more about the different areas visit: <a href="https://guides.gamepressure.com/hades/guide.asp?ID=60340" target="_blank">https://guides.gamepressure.com/hades/guide.asp?ID=60340</p>
-        </div>
-    </main>
+        </main>
 
-    <!-- footer area to add content at bottom of page -->
-    <footer>
-        <p>Brezhiona Pierce, &copy; Copyright</p>
-    </footer>
+        <!-- footer area to add content at bottom of page -->
+        <footer>
+            <p>Brezhiona Pierce, &copy; Copyright</p>
+        </footer>
     </div>
 </body>
 

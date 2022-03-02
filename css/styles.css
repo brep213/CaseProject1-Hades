@@ -1,0 +1,148 @@
+/*
+Author:Brezhiona Pierce
+Date: February 13, 2022
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}
+
+/*css for page structure*/
+body {
+    background-color: rgb(105, 12, 12);;
+    padding: 2%;
+}
+
+main {
+    background-color: rgb(68, 58, 58);
+    padding: 2%;
+    font-size: 1.25em;
+    clear: left;
+    border-top: 2px solid rgb(233, 207, 62);
+    border-bottom: 2px solid rgb(233, 207, 62);
+    border-left: 2px solid rgb(233, 207, 62);
+    border-right: 2px solid rgb(233, 207, 62);
+}
+img {
+    max-width: 100%; /* fits whatever screen size*/
+    height: auto; /*keep images in proportion*/
+    display: block;
+    /* margin: 0 auto; centers the element itself */
+}
+p{
+    color: rgb(237, 238, 172);
+}
+h2 {
+    color: rgb(237, 238, 172);
+}
+/* position header and nav side-by-side using FLOAT */
+header {
+    /*background-color: red;*/
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    margin: 1em 3em 0 0;
+    font-family: 'Caesar Dressing', cursive;
+    background-color: black;
+    text-align: center;
+}
+/*more css for navigation */
+
+nav ul {
+    list-style-type: none;
+    margin: 0; 
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em; 
+    /*font-family: Verdana, Arial, sans-serif;*/
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: rgb(233, 207, 62);
+    text-align: center; 
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: #ff0000;
+}
+/* Style rules for footer content */
+footer p {
+    font-size: 0.75em; 
+    text-align: center;
+    color: rgb(237, 238, 172);
+    padding: 0 1em;
+}
+/*css for ids */
+
+.site-title {
+    display: none; /*hides it because logo says the same */
+}
+
+h2{
+    font-family: 'Caesar Dressing', cursive;
+}
+p{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+/*text next to character images*/
+.move_text {
+    display: block;
+    float: right;
+    border-top: 2px solid rgb(233, 207, 62);
+    border-bottom: 2px solid rgb(233, 207, 62);
+    border-left: 2px solid rgb(233, 207, 62);
+    border-right: 2px solid rgb(233, 207, 62);
+    width: 45%;
+}
+/*character images styling*/
+.char-image {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0%, 0%, 0%, 20%;
+    border-top: 2px solid rgb(233, 207, 62);
+    border-bottom: 2px solid rgb(233, 207, 62);
+    border-left: 2px solid rgb(233, 207, 62);
+    border-right: 2px solid rgb(233, 207, 62);
+}
+.logo{
+    margin: 0 auto;
+    width: 300px;
+}
+/* styling for charachter list links*/
+#char-list {
+ list-style: none;
+ text-align: center;
+ font-family: 'Caesar Dressing', cursive;
+}
+#char-list li{
+display: inline-block;
+padding: 1em;
+}
+#char-list li a{
+display: block;
+text-decoration: none;
+color: rgb(237, 238, 172);
+}
+#char-list li a:hover{
+    color:#ff0000
+}
+iframe {
+    width: auto;
+}
+ol {
+    color: rgb(233, 207, 62);
+    font-family: 'Alegreya Sans', sans-serif;
+}
