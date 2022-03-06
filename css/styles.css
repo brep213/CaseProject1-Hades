@@ -38,7 +38,7 @@ img {
 p{
     color: rgb(237, 238, 172);
 }
-h2 {
+h2, h4 {
     color: rgb(237, 238, 172);
 }
 /* position header and nav side-by-side using FLOAT */
@@ -97,7 +97,7 @@ footer p {
     display: none; /*hides it because logo says the same */
 }
 
-h2{
+h2,h4{
     font-family: 'Caesar Dressing', cursive;
 }
 p{
