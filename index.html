@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--needed for mobile-->
     <title> Hades </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,41 +18,56 @@
 <body>
     <div id="container">
         <!-- header area for the website name or logo -->
-        <header>
-            <h1 class="site-title"> Hades </h1>
-            <img src="images/Hades_logo_small.png" alt="hades logo" class="logo">
-        </header>
-
+        <div class="wrapper-header">
+            <header>
+                <h1 class="site-title"> Hades </h1>
+                <img src="images/Hades_logo_small.png" alt="hades logo" class="logo">
+            </header>
+        </div>
         <!-- nav area to add the main content specific to each website -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="biomes.html">Biomes</a></li>
-                <li><a href="characters.html">Characters</a></li>
-                <li><a href="weapons.html">Weapons</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper-nav">
+            <button class="menu-icon">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biomes.html">Biomes</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="weapons.html">Weapons</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <!-- main area to add the main content specific to each webpage -->
-        <main>
-            <h2>Home</h2>
-            <p> Hades is a rogue-like dungeon crawler (the first one I've ever played). You play as Zagreus, the
-                immortal son of Hades. The goal of the game is to escape to defy Hades and try to escape the Underworld
-                with the help of the Gods on olympus, and other important figures in Greek mythology. </p>
-            <img src="images/Characters/Zagreus.png" alt="Zagreus">
-            <p>This is Zagreus the main charachter.</p>
-            <!-- want to add a trailer of the game -->
-            <p>This game can be played multiple times, and every time you play you get a different experience almost
-                every time. You can use different abilities and different boons gifted by the gods on mount olympus.
-            </p>
-            <p>Here's the trailer</p>
-            <iframe src="https://www.youtube.com/embed/91t0ha9x0AE?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </main>
-
+        <div class="wrapper-content">
+            <main>
+                <article>
+                    <h2 class="page-title">Home</h2>
+                    <h2>Welcome to Hades</h2>
+                    <p> Hades is a rogue-like dungeon crawler (the first one I've ever played). You play as Zagreus, the
+                        immortal son of Hades. The goal of the game is to escape to defy Hades and try to escape the
+                        Underworld
+                        with the help of the Gods on olympus, and other important figures in Greek mythology. </p>
+                    <img src="images/Characters/Zagreus.png" alt="Zagreus">
+                    <p>This is Zagreus the main character.</p>
+                    <!-- want to add a trailer of the game -->
+                    <p>This game can be played multiple times, and every time you play you get a different experience
+                        almost
+                        every time. You can use different abilities and different boons gifted by the gods on mount
+                        olympus.
+                    </p>
+                </article>
+                <aside>
+                    <p>Here's the trailer</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mD8x5xLHRho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </aside>
+            </main>
+        </div>
         <!-- footer area to add content at bottom of page -->
-        <footer>
-            <p>Brezhiona Pierce, &copy; Copyright</p>
-        </footer>
+        <div class="wrapper-footer">
+            <footer>
+                <p>Brezhiona Pierce, &copy; Copyright</p>
+            </footer>
+        </div>
     </div>
 </body>
 

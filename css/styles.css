@@ -13,8 +13,10 @@ body, header, nav, main, footer, h1, div, img {
 
 /*css for page structure*/
 body {
-    background-color: rgb(105, 12, 12);;
+    background-color: rgb(105, 12, 12);
     padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
 }
 
 main {
@@ -44,14 +46,18 @@ header {
     /*background-color: red;*/
     width: 100%;
     text-align: center;
+    margin: 0 2% 0 2%;
 }
-
+.wrapper-header {
+    width: 100%;
+}
 nav {
     width: 100%;
-    margin: 1em 3em 0 0;
+    margin: 1em 0 3em 0;
     font-family: 'Caesar Dressing', cursive;
     background-color: black;
     text-align: center;
+    padding: 0, 2em, 0, 3em;
 }
 /*more css for navigation */
 
@@ -99,44 +105,46 @@ p{
 }
 /*text next to character images*/
 .move_text {
-    display: block;
-    float: right;
+    display: inline-block;
+    /* float: right; */
     border-top: 2px solid rgb(233, 207, 62);
     border-bottom: 2px solid rgb(233, 207, 62);
     border-left: 2px solid rgb(233, 207, 62);
     border-right: 2px solid rgb(233, 207, 62);
-    width: 45%;
+    float: none;
+    text-align: center;
+    width: auto;
 }
 /*character images styling*/
-.char-image {
+#char-image {
     display: inline-block;
-    vertical-align: top;
     padding: 0%, 0%, 0%, 20%;
     border-top: 2px solid rgb(233, 207, 62);
     border-bottom: 2px solid rgb(233, 207, 62);
     border-left: 2px solid rgb(233, 207, 62);
     border-right: 2px solid rgb(233, 207, 62);
+    /* float: left; */
 }
 .logo{
     margin: 0 auto;
     width: 300px;
 }
 /* styling for charachter list links*/
-#char-list {
+.list {
  list-style: none;
  text-align: center;
  font-family: 'Caesar Dressing', cursive;
 }
-#char-list li{
+.list li{
 display: inline-block;
 padding: 1em;
 }
-#char-list li a{
+.list li a{
 display: block;
 text-decoration: none;
 color: rgb(237, 238, 172);
 }
-#char-list li a:hover{
+.list li a:hover{
     color:#ff0000
 }
 iframe {
@@ -145,4 +153,59 @@ iframe {
 ol {
     color: rgb(233, 207, 62);
     font-family: 'Alegreya Sans', sans-serif;
+}
+.page-title {
+    display: center;
+    margin: 2rem 1rem 2rem 1rem;
+    font-weight: bold;
+}
+article {
+ background-color: rgb(36, 35, 35);
+ margin: 2rem 0 2rem 0;
+}
+aside {
+ background-color: rgb(36, 35, 35);
+}
+@media screen and (min-width:480px) {
+    html {
+        font-size: 110%;
+    }
+    header,nav,main,footer {
+        margin: 0 4% 0 4%;
+    }
+    .move_text {
+        float: none;
+        text-align: center;
+        width: auto;
+    }
+}
+@media screen and (min-width:768px){
+    html {
+        font-size: 120%;
+    }
+    .menu-icon{
+        display: none;
+    }
+    nav li {
+        display: inline-block;
+    }
+    .move_text {
+        float: right;
+        width: 45%;
+        
+    }
+    #char-image {
+        float: left;
+    }
+
+}
+@media  screen and (min-width:960px) {
+    html {
+		font-size: 140%; /* scale all em, rem, and % amounts up by 10%: */
+	}
+}
+@media  screen and (min-width: 1280px) {
+    html {
+        font-size: 160;
+    }
 }

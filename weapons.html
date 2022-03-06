@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--needed for mobile-->
     <title> Hades </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +18,16 @@
 <body>
     <div id="container">
         <!-- header area for the website name or logo -->
+        <div class="wrapper-header">
         <header>
             <h1 class="site-title"> Hades </h1>
             <img src="images/Hades_logo_small.png" alt="hades logo" class="logo">
         </header>
-
+        </div>
         <!-- nav area to add the main content specific to each website -->
+        <div class="wrapper-nav">
         <nav>
+            <button class="menu-icon">&#9776;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="biomes.html">Biomes</a></li>
@@ -31,10 +35,11 @@
                 <li><a href="weapons.html">Weapons</a></li>
             </ul>
         </nav>
-
+        </div>
         <!-- main area to add the main content specific to each webpage -->
+        <div class="wrapper-content">
         <main>
-            <h2>Weapons</h2>
+            <h2 class="page-title">Weapons</h2>
             <p> The weapons Zagreus uses are known as the infernal arms. They are his main way of attacking and can be
                 unlocked using Cthonic Keys.
                 They can be upgraded temporarily using Daedalus's Hammer (can be found throughout the Underworld). To
@@ -42,39 +47,41 @@
                 have to use titan blood which can be found by defeating bosses.
             </p>
             <h4>List of the Infernal arms</h4>
-            <ul>
-                <li>Stygius</li>
-                <li>Coronacht</li>
-                <li>Aegis</li>
-                <li>Varatha</li>
-                <li>Malphon</li>
-                <li>Exagryph</li>
+            <ul class="list">
+                <li><a href="#stygius">Stygius</a></li>
+                <li><a href="#coronacht">Coronacht</a></li>
+                <li><a href="#aegis">Aegis</a></li>
+                <li><a href="#varatha">Varatha</a></li>
+                <li><a href="#malphon">Malphon</a></li>
+                <li><a href="exagryph">Exagryph</a></li>
             </ul>
-            <h2>Stygius (Stygian Blade)</h2>
+            <h2 id="stygius">Stygius (Stygian Blade)</h2>
             <img src="images/Weapons/Stygian_Blade.png" alt="Stygian Blade">
             <p class="move_text">A long sword. The first weapon Zagreus can use on his journey to escape Hades.</p>
-            <h2>Coronacht (Heart-seeking bow)</h2>
+            <h2 id="coronacht">Coronacht (Heart-seeking bow)</h2>
             <img src="images/Weapons/Heart-Seeker_Bow.png" alt="Heart Seeking Bow">
             <p class="move_text">A bow that lets Zagreus use long-range attacks.</p>
-            <h2>Aegis (Shield of Chaos)</h2>
+            <h2 id="aegis">Aegis (Shield of Chaos)</h2>
             <img src="images/Weapons/Shield_of_Chaos.png" alt="Shield of Chaos">
             <p class="move_text">A shield that can be used for bashing enemies and can defend against almost every kind of attack.</p>
-            <h2>Varatha (Eternal Spear) </h2>
+            <h2 id="varatha">Varatha (Eternal Spear) </h2>
             <img src="images/Weapons/Eternal_Spear.png" alt="Eternal Spear">
             <p class="move_text">A spear that can deliver long-range attacks repeatedly. </p>
-            <h2>Malphon (Twin Fists of Malphon)</h2>
+            <h2 id="malphon">Malphon (Twin Fists of Malphon)</h2>
             <img src="images/Weapons/Twin_Fists.png" alt="Twin Fists of Malphon">
             <p class="move_text">This weapon allows Zagreus to use combos at close range.</p>
-            <h2>Exagryph (Adamant Rail)</h2>
+            <h2 id="exagryph">Exagryph (Adamant Rail)</h2>
             <img src="images/Weapons/Adamant_Rail.png" alt="Adamant_Rail">
             <p class="move_text">Like the bow, it is a long-range weapon, but it must be reloaded.</p>
 
         </main>
-
+        </div>
         <!-- footer area to add content at bottom of page -->
+        <div class="wrapper-footer">
         <footer>
             <p>Brezhiona Pierce, &copy; Copyright</p>
         </footer>
+        </div>
     </div>
 </body>
 

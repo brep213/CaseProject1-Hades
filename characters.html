@@ -4,6 +4,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--needed for mobile-->
     <title> Hades </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +19,16 @@
 <body>
     <div id="container">
         <!-- header area for the website name or logo -->
-
+        <div class="wrapper-header">
             <header>
-                <h1 class="site-title"> Hades </h1>
-                <img src="images/Hades_logo_small.png" alt="hades logo" class="logo">
+            <h1 class="site-title"> Hades </h1>
+            <img src="images/Hades_logo_small.png" alt="hades logo" class="logo">
             </header>
-
-            <!-- nav area to add the main content specific to each website -->
+        </div>
+        <!-- nav area to add the main content specific to each website -->
+        <div class="wrapper-nav">
             <nav>
+                <button class="menu-icon">&#9776;</button>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="biomes.html">Biomes</a></li>
@@ -32,10 +36,11 @@
                     <li><a href="weapons.html">Weapons</a></li>
                 </ul>
             </nav>
-
-            <!-- main area to add the main content specific to each webpage -->
+        </div>
+        <!-- main area to add the main content specific to each webpage -->
+        <div class="wrapper-content">
             <main>
-                <h2>Characters</h2>
+                <h2 class="page-title">Characters</h2>
                 <p> There are many characters in Hades to meet and get to know. Each one gives you different benefits.
                     The ones that help you "directly" during your adventure through Hades are the olympians. They offer
                     boons to that help you travel throgh the underworld. There other characters that offer temporary
@@ -49,7 +54,7 @@
                     the
                     Olympians also offer temporary boons that can be granted randomly</p>
                 <!-- add list of Characters with images -->
-                <ol id="char-list">
+                <ol class="list">
                     <li><a href="#zeus">Zeus</a></li>
                     <li><a href="#poseidon">Poseidon</a></li>
                     <li><a href="#athena">Athena</a></li>
@@ -60,37 +65,61 @@
                     <li><a href="#dionysus">Dionysus</a></li>
                 </ol>
                 <h2 id="zeus">Zeus</h2>
-                <img class= "char-image" src="images/Characters/Zeus.png" alt="Zeus">
-                <p class="move_text">His boons allow attacks to deal damage to multiple enemies.The status ailment his boon causes is "Jolted". The victims next attack causes it to inflict damage on itself and other enemies around it.</p>
+                <p class="move_text">His boons allow attacks to deal damage to multiple enemies.The status ailment his
+                    boon causes is "Jolted". The victims next attack causes it to inflict damage on itself and other
+                    enemies around it.</p>
+                <img class="char-image" src="images/Characters/Zeus.png" alt="Zeus">
+                
                 <h2 id="aphrodite">Aphrodite</h2>
-                <img class= "char-image" src="images/Characters/Aphrodite.png" alt="Aphrodite">
-                <p class="move_text">Her boons let Zagreus give his enemies a speed debuff. The status ailment her boons cause "Weak". The victims attacks do less damage.</p>
-                <h2 id="poseidon">Poseidon</h2>
-                <img class= "char-image" src="images/Characters/Poseidon.png" alt="Poseidon">
-                <p class="move_text">His boons give weapons the ability to knock back enemies. The status ailment his boon causes is "Ruptured". The victim will take rapid damage everytime they move.</p>
+                <p class="move_text">Her boons let Zagreus give his enemies a speed debuff. The status ailment her boons
+                    cause "Weak". The victims attacks do less damage.</p>
+                <img class="char-image" src="images/Characters/Aphrodite.png" alt="Aphrodite">
+                
+                <h2 id="poseidon">Poseidon</h2>\
+                <p class="move_text">His boons give weapons the ability to knock back enemies. The status ailment his
+                    boon causes is "Ruptured". The victim will take rapid damage everytime they move.</p>
+                <img class="char-image" src="images/Characters/Poseidon.png" alt="Poseidon">
+                
                 <h2 id="ares">Ares</h2>
-                <img class= "char-image" src="images/Characters/Ares.png" alt="Ares">
-                <p class="move_text">His boons increase Zagreus’s ability damage as well as deals enemies damage over time. The status ailment his boon causes is "Doom". When affected the victim will eventually take damage.</p>
+                <p class="move_text">His boons increase Zagreus’s ability damage as well as deals enemies damage over
+                    time. The status ailment his boon causes is "Doom". When affected the victim will eventually take
+                    damage.</p>
+                <img class="char-image" src="images/Characters/Ares.png" alt="Ares">
+                
                 <h2 id="hermes">Hermes</h2>
-                <img class= "char-image" src="images/Characters/Hermes.png" alt="Hermes">
-                <p class="move_text">His boons buffs Zagreus’s speed in different ways (i.e., movement and/or attack). Hermes is the only Olympian that do not curse the enemy. His boons are strictly buffs for Zagreus.</p>
+                <p class="move_text">His boons buffs Zagreus’s speed in different ways (i.e., movement and/or attack).
+                    Hermes is the only Olympian that do not curse the enemy. His boons are strictly buffs for Zagreus.
+                </p>
+                <img class="char-image" src="images/Characters/Hermes.png" alt="Hermes">
+                
                 <h2 id="athena">Athena</h2>
-                <img class= "char-image" src="images/Characters/Athena.png" alt="Athena">
-                <p class="move_text">Her boons provide Zagreus with opportunities to deflect an enemy’s attacks. The status ailment her boon causes is "Exposed". The victim takes more damge when struck from behind.</p>
+                <p class="move_text">Her boons provide Zagreus with opportunities to deflect an enemy’s attacks. The
+                    status ailment her boon causes is "Exposed". The victim takes more damge when struck from behind.
+                </p>
+                <img class="char-image" src="images/Characters/Athena.png" alt="Athena">
+                
                 <h2 id="dionysus">Dionysus</h2>
-                <img class= "char-image" src="images/Characters/Dionysus.png" alt="Dionysus">
-                <p class="move_text">His boons poisons enemies or increase Zagreus’s health over time. The status ailment his boon causes is "Hangover". The victim takes damage everty half second, and this ailment can be stacked up to five times.</p>
+                <p class="move_text">His boons poisons enemies or increase Zagreus’s health over time. The status
+                    ailment his boon causes is "Hangover". The victim takes damage everty half second, and this ailment
+                    can be stacked up to five times.</p>
+                <img class="char-image" src="images/Characters/Dionysus.png" alt="Dionysus">
+                
                 <h2 id="artemis">Artemis</h2>
-                <img class= "char-image" src="images/Characters/Artemis.png" alt="Artemis">
-                <p class="move_text">Her boons boost the chance for Zagreus to land critical damage on his enemies. The status ailment her boon causes is "Marked". The victim has a higher chance of taking critical damage from one attack.</p>
-                <p> For more charachter information: <a href="https://hades.fandom.com/wiki/Characters"
+                <p class="move_text">Her boons boost the chance for Zagreus to land critical damage on his enemies. The
+                    status ailment her boon causes is "Marked". The victim has a higher chance of taking critical damage
+                    from one attack.</p>
+                <img class="char-image" src="images/Characters/Artemis.png" alt="Artemis">
+                
+                <p> For more character information: <a href="https://hades.fandom.com/wiki/Characters"
                         target="_blank">https://hades.fandom.com/wiki/Characters</a></p>
             </main>
-
-            <!-- footer area to add content at bottom of page -->
+        </div>
+        <!-- footer area to add content at bottom of page -->
+        <div class="wrapper-footer">
             <footer>
                 <p>Brezhiona Pierce, &copy; Copyright</p>
             </footer>
+        </div>
     </div>
 </body>
 

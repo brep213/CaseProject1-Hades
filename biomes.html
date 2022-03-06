@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--needed for mobile-->
     <title> Hades </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +18,16 @@
 <body>
     <div id="container">
         <!-- header area for the website name or logo -->
+        <div class="wrapper-header">
         <header>
             <h1 class="site-title"> Hades </h1>
             <img src="images/Hades_logo_small.png" alt="hades logo" class="logo">
         </header>
-
+        </div>
         <!-- nav area to add the main content specific to each website -->
+        <div class="wrapper-nav">
         <nav>
+            <button class="menu-icon">&#9776;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="biomes.html">Biomes</a></li>
@@ -31,11 +35,12 @@
                 <li><a href="weapons.html">Weapons</a></li>
             </ul>
         </nav>
-
+        </div>
         <!-- main area to add the main content specific to each webpage -->
+        <div class="wrapper-content">
         <main>
             <div id="biomes">
-                <h2>Biomes</h2>
+                <h2 class="page-title">Biomes</h2>
                 <p> To beat the game you must make it through each biome in hades in on run. Each level has different
                     enviroment
                     that can be used against you and/or the enemies.
@@ -72,11 +77,13 @@
                         target="_blank">https://guides.gamepressure.com/hades/guide.asp?ID=60340</a></p>
             </div>
         </main>
-
+        </div>
         <!-- footer area to add content at bottom of page -->
+        <div class="wrapper-footer">
         <footer>
             <p>Brezhiona Pierce, &copy; Copyright</p>
         </footer>
+        </div>
     </div>
 </body>
 
